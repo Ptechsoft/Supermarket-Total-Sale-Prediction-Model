@@ -102,21 +102,21 @@ print("Stage 7: Header rendered")
 with st.form("predict_form"):
     col1, col2 = st.columns(2)
 
-    with col1:
-        branch = st.selectbox("Branch", options=["Alex", "Giza", "Cairo"])
-        city = st.selectbox("City", options=["Yangon", "Naypyitaw", "Mandalay"])
-        customer_type = st.selectbox("Customer Type", options=["Member", "Normal"])
-        gender = st.selectbox("Gender", options=["Female", "Male"])
+with col1:
+    branch = st.selectbox("Branch", options=["Alex", "Giza", "Cairo"])
+    city = st.selectbox("City", options=["Yangon", "Naypyitaw", "Mandalay"])
+    customer_type = st.selectbox("Customer Type", options=["Member", "Normal"])
+    gender = st.selectbox("Gender", options=["Female", "Male"])
 
-    with col2:
-        product_line = st.selectbox("Product Line", options=[
+with col2:
+    product_line = st.selectbox("Product Line", options=[
             "Health and beauty", "Electronic accessories", "Home and lifestyle",
             "Sports and travel", "Food and beverages", "Fashion accessories"
         ])
-        payment = st.selectbox("Payment Method", options=["Ewallet", "Cash", "Credit card"])
+    payment = st.selectbox("Payment Method", options=["Ewallet", "Cash", "Credit card"])
 
-        unit_price = st.number_input("Unit Price ($)", min_value=0.0, max_value=200.0, value=50.0, step=0.1)
-        quantity = st.number_input("Quantity", min_value=1, max_value=20, value=5, step=1)
+    unit_price = st.number_input("Unit Price ($)", min_value=0.0, max_value=200.0, value=50.0, step=0.1)
+    quantity = st.number_input("Quantity", min_value=1, max_value=20, value=5, step=1)
 
     col3, col4 = st.columns(2)
 

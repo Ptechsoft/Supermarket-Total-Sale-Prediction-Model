@@ -35,3 +35,5 @@ Final Result: `The CatBoost Regressor` delivered the best results, achieving an 
 This level of accuracy makes CatBoost highly reliable for post-transaction sales analysis, pricing strategy validation, and understanding key drivers (especially Unit price and Quantity) in the supermarket environment.
 **Note**: This is a demonstration version — the model uses features only known after the transaction (Unit price, Quantity) and should not be used for true pre-purchase forecasting. For real-world forecasting, these features must be excluded.
 
+### Use the link below to make your prediction
+https://supermarket-total-sale-prediction-model-main.streamlit.app/
